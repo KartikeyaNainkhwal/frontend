@@ -59,7 +59,7 @@ function Home() {
 
   return (
     <div className="min-h-screen">
-      <Chatbott />
+      <Chatbot />
       <Header 
         darkMode={darkMode} 
         toggleDarkMode={toggleDarkMode} 

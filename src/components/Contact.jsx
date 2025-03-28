@@ -21,7 +21,7 @@ const ContactForm = () => {
     setSubmitStatus(null);
 
     try {
-      const response = await fetch('https://backe.netlify.app/send-email', {
+      const response = await fetch('https://backend1-9pbe.onrender.com/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

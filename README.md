@@ -155,10 +155,7 @@ module.exports = {
 - Replace with **Dialogflow, OpenAI, or any other API**.  
 
 ### **2. Contact Form**  
-- Currently uses a simple form (can integrate with **Formspree, Netlify Forms, or Nodemailer**).  
-
-### **3. Analytics**  
-- Add **Google Analytics** or **Vercel Analytics** in `_app.js`.  
+- Currently uses a simple form .  
 
 ---
 

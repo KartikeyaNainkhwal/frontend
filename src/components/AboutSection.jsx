@@ -12,15 +12,21 @@ const AboutSection = () => {
             className="md:w-2/5 flex justify-center"
             variants={slideInFromLeft}
           >
-            <div className="relative w-100 h-90 overflow-hidden rounded-xl border-4 border-blue-500/20 dark:border-blue-400/20 shadow-lg bg-blue-50/30 dark:bg-blue-900/20">
+            <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 overflow-hidden rounded-xl border-4 border-blue-500/20 dark:border-blue-400/20 shadow-lg bg-blue-50/30 dark:bg-blue-900/20 group">
               <motion.img
                 src={profileImage} 
                 alt="Profile" 
-                className="object-cover w-full h-full"
+                className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
                 initial={{ scale: 1.1 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 1, ease: "easeOut" }}
               />
+              {/* Decorative elements */}
+              <div className="absolute inset-0 rounded-xl border-2 border-white/30 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/10 dark:to-black/20 pointer-events-none" />
+              
+              {/* Glow effect on hover */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[radial-gradient(circle_at_center,_rgba(59,130,246,0.1)_0%,_transparent_70%)] pointer-events-none" />
             </div>
           </motion.div>
           

@@ -4,7 +4,7 @@ import ModeToggle from './ModeToggle';
 
 const Header = ({ darkMode, toggleDarkMode, isMenuOpen, setIsMenuOpen, activeSection, scrollToSection }) => {
   const handleDownloadResume = () => {
-    // Replace with your actual resume
+  
     try {
       const resumeUrl = '/resume (1).pdf';
       const link = document.createElement('a');
@@ -15,7 +15,7 @@ const Header = ({ darkMode, toggleDarkMode, isMenuOpen, setIsMenuOpen, activeSec
       document.body.removeChild(link);
     } catch (error) {
       console.error('Error downloading resume:', error);
-      // Optionally show an error message to the user
+      
     }
   };
 
